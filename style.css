@@ -128,8 +128,8 @@ main {
 }
 
 .nameofmovie {
-  background-color: rgb(53, 87, 121);
-  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
   height:auto;
   min-height: 50%;
   display: flex;
