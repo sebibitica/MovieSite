@@ -13,7 +13,12 @@
     <a href="../"><img class="logo" src="../logo.png" alt="Movies" /></a>
     <nav>
       <ul>
-        <li><a href="../search/">Search</a></li>
+        <li class="dropdown">
+            <a href="../search/">Search</a>
+            <div class="dropdown-content">
+                <a href="../search/category/">Search Category</a>
+            </div>
+        </li>
         <li><a href="../account/">Account</a></li>
         <li class="dropdown">
           <a href="../about/">About</a>

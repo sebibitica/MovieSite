@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: rgb(53, 87, 121);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+  }
+  
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .image {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+  }
+  
+  .movie.image {
+    width: 40%;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #090f24;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    padding-bottom: 4rem;
+  }
+  
+  .welcome {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .welcome-title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Papyrus";
+    margin-bottom: 10px;
+  }
+  
+  .welcome-title span {
+    transition: color 0.1s;
+  }
+  
+  .welcome-title span:hover {
+    color: red;
+    font-size: 40px;
+  }
+  
+  .movie-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .movie {
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .movie:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+  
+  .details {
+    display: flex;
+    height: 100%;
+    width: 55%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .nameofmovie {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    height:auto;
+    min-height: 50%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .director {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textGenre {
+    margin-right: 40px;
+}
+
+input[type="submit"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(53, 87, 121);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Add a hover effect */
+input[type="submit"]:hover {
+    background-color: #090f24; /* Change the background color on hover */
+}
+
+
+select {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+  
+  footer {
+    background-color: #090f24;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    padding: 20px;
+    width: 100%;
+    height: 4rem;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(53, 87, 121);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    margin-left: -20px;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media (max-width: 1400px) {
+    .movie-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .movie-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .movie-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

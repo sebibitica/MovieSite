@@ -17,7 +17,12 @@
     </div>
     <nav>
       <ul>
-        <li><a href="../search/">Search</a></li>
+        <li class="dropdown">
+            <a href="../search/">Search</a>
+            <div class="dropdown-content">
+                <a href="../search/category/">Search Category</a>
+            </div>
+        </li>
         <li><a href="./">Account</a></li>
         <li class="dropdown">
           <a href="../about/">About</a>
